@@ -3,6 +3,13 @@ import img from '../assets/1775.png'
 import imag from '../assets/1776.png'
 import Lan from '../assets/lan.svg'
 import Phones from '../assets/phones.png'
+import vir from '../assets/vr.svg'
+import sf from '../assets/so.svg'
+import rl from '../assets/rl.svg'
+import pq from '../assets/pq.svg'
+import pr from '../assets/pr.svg'
+import mr from '../assets/mr.svg'
+import eb from '../assets/eb.svg'
 
 
 const Phone = () => {
@@ -24,33 +31,33 @@ const Phone = () => {
    <p style={{color:'white'}}>Learning</p>
    </div>
    <div style={{display:'flex' , gap:'30px' , marginTop:'15px'}}>
-   <img src={Lan}/>
+   <img src={vir}/>
    <p style={{color:'white'}}>Virtual Classroom</p>
    </div>
    <div style={{display:'flex' , gap:'30px' , marginTop:'15px'}}>
-   <img src={Lan}/>
+   <img src={sf}/>
    <p style={{color:'white'}}>Social Forum</p>
    </div>
    <div style={{display:'flex' , gap:'30px' , marginTop:'15px'}}>
-   <img src={Lan}/>
+   <img src={rl}/>
    <p style={{color:'white'}}>Remedial class</p>
    </div>
    </div>
    <div style={{marginLeft:'100px'}}>
    <div style={{display:'flex' , gap:'30px' }}>
-   <img src={Lan}/>
+   <img src={pq}/>
    <p style={{color:'white'}}>Past Question Paper</p>
    </div>
    <div style={{display:'flex' , gap:'30px' , marginTop:'15px'}}>
-   <img src={Lan}/>
+   <img src={pr}/>
    <p style={{color:'white'}}>Practice Exam</p>
    </div>
    <div style={{display:'flex' , gap:'30px' , marginTop:'15px'}}>
-   <img src={Lan}/>
+   <img src={mr}/>
    <p style={{color:'white'}}>Mobile app</p>
    </div>
    <div style={{display:'flex' , gap:'30px' , marginTop:'15px'}}>
-   <img src={Lan}/>
+   <img src={eb}/>
    <p style={{color:'white'}}>eBook</p>
    </div>
    </div>

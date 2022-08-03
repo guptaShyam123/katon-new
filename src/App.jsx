@@ -6,6 +6,7 @@ import {Slide,Roll} from "react-awesome-reveal";
 import header from "./assets/header.png";
 import Skills from "./components/Skills";
 import About2 from "./components/About2";
+import AboutNew from "./components/AboutNew";
 import phone2 from "./assets/phone2.svg";
 import { AppBar, Toolbar, Typography, Button } from "@mui/material";
 import { styled } from "@mui/system";
@@ -486,7 +487,7 @@ const App = () => {
       {/* <Banner/> */}
      <Sliders/>
    
-    <About2/>
+    <AboutNew/>
    
       {/* <Skills/> */}
       {/* girl standing immage with text */}

@@ -2,6 +2,25 @@ import React from 'react';
 import aaa from '../assets/image23.png'
 import jon from '../assets/jon.png'
 import jons from '../assets/22.png'
+import {AiOutlineRight} from "react-icons/ai";
+import {AiOutlineLeft} from "react-icons/ai";
+import { styled } from "@mui/system";
+
+const Stylebutton = styled("div") (({ theme }) => ({
+  display:'flex',
+  marginLeft:'1100px',
+ ' & button':{
+   backgroundColor:'white',
+   border:'none',
+   
+   cursor:'pointer',
+  
+   marginTop:'30px',
+  opacity:'1',
+  boxShadow:'10px 10px 34px rgba(0, 0, 0, 0.25)',
+  marginLeft: "1vw",
+ }
+}))
 
 const Teams = () => {
   return (
@@ -33,8 +52,16 @@ const Teams = () => {
   </div>
   </div>
   </center>
+
+  <Stylebutton>
+ <button><AiOutlineLeft/></button>
+ <button><AiOutlineRight/></button>
+ </Stylebutton>
+
    </>
-  )
+ 
+   )
+   
 }
 
 export default Teams

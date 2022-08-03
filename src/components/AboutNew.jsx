@@ -6,8 +6,12 @@ const AboutNew = ()=>{
 
 return (
     <>
-      <div >
-   <img  style={{width:'100%'}}src={baby} />
+      <div
+      
+      style={{
+        marginTop:'10vh'
+      }}>
+   <img  style={{width:'100%'}}src={girl} />
    <div style={{}}>
    <p style={{marginLeft:'800px' , color:'#121212' , fontFamily:'Poppins' , letterSpacing:'5px' , marginTop:'-450px'}}>ABOUT US</p>
    <p style={{marginLeft:'800px' , color:'#111D5E' , fontFamily:' Poppins', fontSize:' 40px', fontWeight:'bolder', marginRight:'300px'}}>Welcome to Katon Learning</p>

@@ -58,6 +58,26 @@ body {
    
 }
 
+@media screen and (min-width: 1024px) {
+    .carousel-content > h1{
+
+   
+     
+    
+
+        margin-left:600px;
+        font-family: Poppins;
+        font-weight:800;
+        margin-right:800px;
+        text-align: left;
+        font-size:30px;
+        display:flex;
+        
+    
+       
+    }
+}
+
 .carousel-content > h3{
   
     color:#FFFFFF;

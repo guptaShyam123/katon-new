@@ -6,7 +6,13 @@ import styled from "styled-components";
 import pin from "../assets/footericon1.png";
 import phone from "../assets/footericon2.png";
 import mail from "../assets/mainl.png";
-
+import { FaFacebookF } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+import whitebg from "../assets/whitebg.png";
+import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
+import EmailIcon from '@mui/icons-material/Email';
+import PlaceIcon from '@mui/icons-material/Place';
 
 const Links = styled.div`
     
@@ -23,7 +29,7 @@ const Links = styled.div`
         margin-top: 20vh;
     }
 `
-  
+
 const KatonDiv = styled.div`
       display: grid;
       @media screen and (min-width: 1024px) {
@@ -39,14 +45,31 @@ const KatonDiv = styled.div`
         margin-top: 10vh;
     }
 `
+
+const IconDiv = styled.div`
+
+display: flex;
+margin-left:30px;
+@media(min-width:1024px) and (max-width:1279px){
+  margin-left:50px;
+}
+
+`
+const WhiteBg = styled.img`
+  width:27px;
+  height:25px;
+  margin-top:10px;
+  margin-left:20px;
+  cursor:pointer;
+`
 const Footer2 = () => {
   return (
-  <>
-     <div
+    <>
+      <div
         style={{
           marginTop: "20vh",
           //   display: "flex",
-          marginBottom:'-50vh'
+          marginBottom: '-50vh'
         }}
       >
         <img style={{ width: "100%" }} src={footer} />
@@ -110,16 +133,14 @@ const Footer2 = () => {
             >
               FOLLOW US
             </p>
-            <img
-              style={{
-                width: "8vw",
-                height: "4vh",
-                marginLeft: "14px",
-                marginTop: "10px",
-                cursor: "pointer",
-              }}
-              src={icons}
-            />
+            <IconDiv>
+              <WhiteBg src={whitebg} />
+              <FaFacebookF style={{ color: '#00BEE3', marginLeft: '-18px', width: '7px', height: '12px', marginTop: '17px' }} />
+              <WhiteBg src={whitebg} />
+              <FaLinkedinIn style={{ color: '#00BEE3', marginLeft: '-18px', width: '12px', height: '15px', marginTop: '17px' }} />
+              <WhiteBg src={whitebg} />
+              <FaTwitter style={{ color: '#00BEE3', marginLeft: '-18px', width: '12px', height: '15px', marginTop: '17px' }} />
+            </IconDiv>
           </div>
         </div>
         {/* quick links div */}
@@ -290,17 +311,10 @@ const Footer2 = () => {
                 <div
                   style={{
                     display: "flex",
-                    width:'20vw'
+                    width: '20vw'
                   }}
                 >
-                  <img
-                    style={{
-                      width: "20px",
-                      height: "20px",
-                      marginTop: "10px",
-                    }}
-                    src={pin}
-                  />
+                <PlaceIcon sx={{color:'#00BEE3',marginTop:'15px',width:'20.5px',height:'20.5px'}} />
                   <p
                     style={{
                       marginLeft: "12px",
@@ -323,14 +337,7 @@ const Footer2 = () => {
                     display: "flex",
                   }}
                 >
-                  <img
-                    style={{
-                      width: "20px",
-                      height: "20px",
-                      marginTop: "10px",
-                    }}
-                    src={phone}
-                  />
+                <LocalPhoneIcon sx={{color:'#00BEE3',marginTop:'15px',width:'20.5px',height:'20.5px'}} />
                   <p
                     style={{
                       marginLeft: "12px",
@@ -352,14 +359,7 @@ const Footer2 = () => {
                     display: "flex",
                   }}
                 >
-                  <img
-                    style={{
-                      width: "20px",
-                      height: "20px",
-                      marginTop: "10px",
-                    }}
-                    src={mail}
-                  />
+                <EmailIcon sx={{color:'#00BEE3',marginTop:'15px',width:'20.5px',height:'20.5px'}} /> 
                   <p
                     style={{
                       marginLeft: "10px",
@@ -375,7 +375,7 @@ const Footer2 = () => {
           </div>
         </Links>
       </div>
-  </>
+    </>
   )
 }
 
